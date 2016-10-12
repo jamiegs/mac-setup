@@ -44,27 +44,32 @@ brew install homebrew/versions/mongodb26
 
 # Apps
 apps=(
-  cyberduck
-  dropbox
-  google-chrome
-  slack
-  hazel
-  spotify
-  vagrant
-  iterm2
-  sublime-text3
-  virtualbox
-  vlc
-  evernote
-  moom  
-  controlplane
-  disk-inventory-x
   # downcast
+  caffeine
+  controlplane
+  cyberduck
+  disk-inventory-x
+  dropbox
+  evernote
   flux
+  google-chrome
+  hazel
+  handbrake
+  iterm2
   kaleidoscope
+  marked
+  moom
   paw
-  steam
   scroll-reverser
+  slack
+  spotify
+  steam
+  sublime-text3
+  transmission
+  vagrant
+  virtualbox
+  visual-studio-code
+  vlc
 )
 brew cask install --appdir="/Applications" caskroom/versions/sublime-text3
 
