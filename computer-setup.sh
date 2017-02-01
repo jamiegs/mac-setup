@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Ask for the administrator password upfront
+sudo -v
+
+sudo xcodebuild -license
+
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
@@ -34,10 +39,13 @@ binaries=(
   hub
   git
   ctags
+  openssl
 )
 
 echo "installing binaries..."
 brew install ${binaries[@]}
+
+brew install curl --with-openssl
 
 brew install caskroom/cask/brew-cask
 brew install homebrew/versions/mongodb26
@@ -81,8 +89,7 @@ brew cask install --appdir="/Applications" ${apps[@]}
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Ask for the administrator password upfront
-sudo -v
+
 
 echo ""
 echo "Increasing sound quality for Bluetooth headphones/headsets"
