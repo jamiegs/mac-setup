@@ -142,3 +142,6 @@ echo "Speeding up wake from sleep to 24 hours from an hour"
 sudo pmset -a standbydelay 86400
 
 pip install awscli
+
+#Disable bonjour in cyberduck
+defaults write ch.sudo.cyberduck rendezvous.enable false
