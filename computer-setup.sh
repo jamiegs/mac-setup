@@ -40,6 +40,7 @@ binaries=(
   git
   ctags
   openssl
+  switchaudio-osx
 )
 
 echo "installing binaries..."
